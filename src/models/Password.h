@@ -4,21 +4,22 @@
 
 #ifndef PASSWORD_H
 #define PASSWORD_H
-#include "../../oatpp_resource/test/oatpp/json/DTOMapperTest.hpp"
-#include "../../oatpp_resource/test/oatpp/web/app/DTOs.hpp"
+#include "oatpp/macro/codegen.hpp"
+#include "oatpp/Types.hpp"
 
 
 namespace password {
 
     #include OATPP_CODEGEN_BEGIN(DTO)
 
-    class Password : oatpp::DTO{
+    class Password : public oatpp::DTO{
 
-        DTO_INIT(Password, oatpp::DTO);
+        DTO_INIT(Password, DTO);
 
-        DTO_FIELD(oatpp::String, app);
-        DTO_FIELD(oatpp::String, salt);
-        DTO_FIELD(oatpp::String, saltedValue);
+        DTO_FIELD(Int32, id);
+        DTO_FIELD(String, app);
+        DTO_FIELD(String, salt);
+        DTO_FIELD(String, saltedValue);
     };
 
     #include OATPP_CODEGEN_END(DTO)

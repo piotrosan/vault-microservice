@@ -175,3 +175,5 @@ cython_debug/
 
 oatpp_resource/
 .idea/
+src/cmake-build-debug/
+build/
