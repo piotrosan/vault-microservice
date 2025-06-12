@@ -4,10 +4,14 @@ project(vault)
 set(CMAKE_CXX_STANDARD 20)
 
 add_library(vault-lib
-    models/Password.h
-    models/Password.cpp
+        models/PasswordDto.h
+        models/PasswordDto.cpp
         main.cpp
         main.h
+        controller/PasswordController.cpp
+        controller/PasswordController.h
+        service/PasswordService.cpp
+        service/PasswordService.h
 )
 
 ## include directories

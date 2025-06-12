@@ -12,9 +12,9 @@ namespace password {
 
     #include OATPP_CODEGEN_BEGIN(DTO)
 
-    class Password : public oatpp::DTO{
+    class PasswordDto : public oatpp::DTO{
 
-        DTO_INIT(Password, DTO);
+        DTO_INIT(PasswordDto, DTO);
 
         DTO_FIELD(Int32, id);
         DTO_FIELD(String, app);
