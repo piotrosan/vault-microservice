@@ -8,16 +8,14 @@
 #include "oatpp/Types.hpp"
 
 
-namespace password {
+namespace modelsDto {
 
     #include OATPP_CODEGEN_BEGIN(DTO)
 
     class PasswordDto : public oatpp::DTO{
-
         DTO_INIT(PasswordDto, DTO);
 
         DTO_FIELD(Int32, id);
-        DTO_FIELD(String, app);
         DTO_FIELD(String, salt);
         DTO_FIELD(String, saltedValue);
     };

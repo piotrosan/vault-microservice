@@ -4,5 +4,5 @@
 
 #include "PasswordDto.h"
 
-namespace password {
+namespace modelsDto {
 } // password

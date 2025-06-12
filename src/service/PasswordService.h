@@ -11,7 +11,7 @@
 #include "oatpp/web/protocol/http/Http.hpp"
 #include "oatpp/macro/component.hpp"
 
-using namespace password;
+using namespace modelsDto;
 
 namespace services {
 
