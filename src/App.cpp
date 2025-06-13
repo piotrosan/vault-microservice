@@ -2,7 +2,7 @@
 // Created by piotr on 11.06.25.
 //
 
-#include "main.h"
+#include "App.h"
 
 #include "oatpp/web/server/HttpConnectionHandler.hpp"
 #include "oatpp/network/Server.hpp"

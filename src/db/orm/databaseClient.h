@@ -12,18 +12,16 @@
 namespace orm {
     namespace client {
 
-    #include OATPP_CODEGEN_BEGIN(DbClient)
-        class ClientDatabase {
+        class PostgresClientDatabase {
 
         public:
-            ClientDatabase(const std::shared_ptr<oatpp::orm::Executor>& executo) {
+            PostgresClientDatabase() {
 
             }
         };
 
     }
 
-    #include OATPP_CODEGEN_END(DbClient)
 
 }
 

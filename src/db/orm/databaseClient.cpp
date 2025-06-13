@@ -7,10 +7,10 @@
 namespace orm {
     namespace client {
 
-        class ClientDatabase {
+        class PostgresClientDatabase {
 
             public:
-                ClientDatabase() = default;
+                PostgresClientDatabase() = default;
         };
 
     }

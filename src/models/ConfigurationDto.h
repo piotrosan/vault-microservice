@@ -16,6 +16,8 @@ namespace modelsDto {
         class ConfigurationDto : public oatpp::DTO{
             DTO_INIT(ConfigurationDto, DTO);
             DTO_FIELD(Int32, id);
+            DTO_FIELD(Int32, appName);
+            DTO_FIELD(Tree, configuration);
         };
 
     #include OATPP_CODEGEN_END(DTO)

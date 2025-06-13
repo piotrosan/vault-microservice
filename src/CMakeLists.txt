@@ -6,14 +6,13 @@ set(CMAKE_CXX_STANDARD 20)
 add_library(vault-lib
         models/PasswordDto.h
         models/PasswordDto.cpp
-        main.cpp
-        main.h
+        App.cpp
         controller/PasswordController.cpp
         controller/PasswordController.h
         service/PasswordService.cpp
         service/PasswordService.h
-        db/statement/query.cpp
-        db/statement/query.h
+        db/statement/insertConfiguration.cpp
+        db/statement/insertConfiguration.h
         db/orm/databaseClient.cpp
         db/orm/databaseClient.h
         db/statement/statement.cpp
@@ -27,7 +26,9 @@ add_library(vault-lib
         service/ConfigurationService.cpp
         service/ConfigurationService.h
         db/orm/DbComponent.cpp
-        db/orm/DbComponent.h)
+        db/orm/DbComponent.h
+        AppComponent.cpp
+        AppComponent.h)
 
 ## include directories
 target_include_directories(vault-lib PUBLIC .)
